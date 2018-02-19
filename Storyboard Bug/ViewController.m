@@ -16,6 +16,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _directory = [SyphonServerDirectory sharedDirectory];
+    NSArray *servers = _directory.servers;
+    NSLog(@"servers at viewDidLoad:%lu", servers.count);
     // Do any additional setup after loading the view.
 }
 
