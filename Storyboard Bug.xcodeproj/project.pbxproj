@@ -12,7 +12,39 @@
 		E2EF4A41203B1483000679C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EF4A40203B1483000679C0 /* Assets.xcassets */; };
 		E2EF4A44203B1483000679C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EF4A42203B1483000679C0 /* Main.storyboard */; };
 		E2EF4A47203B1483000679C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EF4A46203B1483000679C0 /* main.m */; };
+		E2EF4A58203B156D000679C0 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2EF4A54203B155B000679C0 /* Syphon.framework */; };
+		E2EF4A5A203B158D000679C0 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2EF4A54203B155B000679C0 /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2EF4A53203B155B000679C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2EF4A4E203B155B000679C0 /* Syphon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = Syphon;
+		};
+		E2EF4A55203B1567000679C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2EF4A4E203B155B000679C0 /* Syphon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Syphon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2EF4A59203B1584000679C0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E2EF4A5A203B158D000679C0 /* Syphon.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E2EF4A37203B1483000679C0 /* Storyboard Bug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Storyboard Bug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +57,7 @@
 		E2EF4A45203B1483000679C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2EF4A46203B1483000679C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2EF4A48203B1483000679C0 /* Storyboard_Bug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Storyboard_Bug.entitlements; sourceTree = "<group>"; };
+		E2EF4A4E203B155B000679C0 /* Syphon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Syphon.xcodeproj; path = "Syphon-Framework/Syphon.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EF4A58203B156D000679C0 /* Syphon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +75,10 @@
 		E2EF4A2E203B1483000679C0 = {
 			isa = PBXGroup;
 			children = (
+				E2EF4A4E203B155B000679C0 /* Syphon.xcodeproj */,
 				E2EF4A39203B1483000679C0 /* Storyboard Bug */,
 				E2EF4A38203B1483000679C0 /* Products */,
+				E2EF4A57203B156D000679C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +106,21 @@
 			path = "Storyboard Bug";
 			sourceTree = "<group>";
 		};
+		E2EF4A4F203B155B000679C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2EF4A54203B155B000679C0 /* Syphon.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2EF4A57203B156D000679C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,10 +131,12 @@
 				E2EF4A33203B1483000679C0 /* Sources */,
 				E2EF4A34203B1483000679C0 /* Frameworks */,
 				E2EF4A35203B1483000679C0 /* Resources */,
+				E2EF4A59203B1584000679C0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E2EF4A56203B1567000679C0 /* PBXTargetDependency */,
 			);
 			name = "Storyboard Bug";
 			productName = "Storyboard Bug";
@@ -116,12 +169,28 @@
 			mainGroup = E2EF4A2E203B1483000679C0;
 			productRefGroup = E2EF4A38203B1483000679C0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E2EF4A4F203B155B000679C0 /* Products */;
+					ProjectRef = E2EF4A4E203B155B000679C0 /* Syphon.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E2EF4A36203B1483000679C0 /* Storyboard Bug */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E2EF4A54203B155B000679C0 /* Syphon.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Syphon.framework;
+			remoteRef = E2EF4A53203B155B000679C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E2EF4A35203B1483000679C0 /* Resources */ = {
@@ -147,6 +216,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2EF4A56203B1567000679C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Syphon;
+			targetProxy = E2EF4A55203B1567000679C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E2EF4A42203B1483000679C0 /* Main.storyboard */ = {

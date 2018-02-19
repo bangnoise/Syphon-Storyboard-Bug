@@ -7,12 +7,15 @@
 //
 
 #import "ViewController.h"
+#import <Syphon/Syphon.h>
 
-@implementation ViewController
+@implementation ViewController {
+    SyphonServerDirectory *_directory;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    _directory = [SyphonServerDirectory sharedDirectory];
     // Do any additional setup after loading the view.
 }
 
@@ -23,5 +26,9 @@
     // Update the view, if already loaded.
 }
 
-
+- (void)mouseUp:(NSEvent *)event
+{
+    NSArray *servers = _directory.servers;
+    NSLog(@"server count: %lu", servers.count);
+}
 @end
